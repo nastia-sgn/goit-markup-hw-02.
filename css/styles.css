@@ -1,0 +1,18 @@
+/* hero #ffffff */
+/* #212121 section title */
+/* text #757575 
+button color #2196F3 and header nav 
+
+footer #ffffff 60%
+fill footer and hero #2F303A
+*/
+
+/* font roboto */
+:root {
+  --primery-text-color: #212121;
+  --second-text-color: #757575;
+}
+
+body {
+  background-color: #e5e5e5;
+}
