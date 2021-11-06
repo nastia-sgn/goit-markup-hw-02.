@@ -6,13 +6,142 @@ button color #2196F3 and header nav
 footer #ffffff 60%
 fill footer and hero #2F303A
 */
-
 /* font roboto */
+
 :root {
   --primery-text-color: #212121;
   --second-text-color: #757575;
+  --accent-color: #2196f3;
 }
 
 body {
-  background-color: #e5e5e5;
+  font-family: roboto, sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.logo {
+  font-family: raleway;
+  font-style: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.site-nav .nav {
+  font-size: 14px;
+  line-height: 1.14;
+}
+.header-tel-mail {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.footer-logo {
+  font-family: raleway;
+  font-style: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.adress-map{
+    background-color: #000000;
+    color: #ffffff;
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.adress-mail {
+    color: rgba(255, 255, 255, 0.6)
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.adress.mob{
+    color: rgba(255, 255, 255, 0.6)
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1.71;  
+}
+/*------------------------------- html------------------------------ */
+.hero {
+  background-color: rgb(77, 57, 57);
+}
+.hero-title {
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 1.36px;
+  text-align: center;
+}
+.btn-hero {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-size: 16px;
+}
+.about-title {
+  font-style: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.about-text {
+  color: var(--second-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.section-title {
+  font-style: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+.section-name {
+  font-style: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.section-descrp {
+  color: var(--second-text-color);
+  font-style: 400;
+  line-height: 1.18;
+}
+/*--------------------------- portfolio.html---------------------------- */
+.button-link {
+  font-family: inherit;
+  background-color: #f5f4fa;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.button-link:hover {
+  background-color: var(--accent-color);
+}
+.button-link:focus {
+  background-color: var(--accent-color);
+}
+
+.project-title {
+  font-style: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.projects-text {
+  color: var(--second-text-color);
+  font-style: 400;
+  font-size: 16px;
+  line-height: 1.87;
 }
