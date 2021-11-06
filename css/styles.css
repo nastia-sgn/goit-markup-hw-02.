@@ -118,6 +118,7 @@ body {
   text-align: center;
 }
 .btn-hero {
+  cursor: pointer;
   color: #ffffff;
   background-color: var(--accent-color);
   font-size: 16px;
