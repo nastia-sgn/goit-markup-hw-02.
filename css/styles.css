@@ -12,7 +12,9 @@ fill footer and hero #2F303A
   --primery-text-color: #212121;
   --second-text-color: #757575;
   --accent-color: #2196f3;
-  --adress-color: gba(255, 255, 255, 0.6)
+  --adress-color: gba(255, 255, 255, 0.6);
+  --main-color: #ffffff;
+  --footer-adress: rgba(255, 255, 255, 0.6);
 }
 
 .visually-hidden {
@@ -37,8 +39,8 @@ fill footer and hero #2F303A
 
 body {
   font-family: roboto, sans-serif;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--primery-text-color);
+  background-color: var(--main-color);
   font-size: 16px;
 }
 /* -------------------------------HEADER--------------------------------- */
@@ -48,64 +50,86 @@ body {
   font-style: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-.logo-blu{
+.logo-blu {
   color: var(--accent-color);
 }
 
 .site-nav .nav {
+  font-weight: 500;
   color: var(--primery-text-color);
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .nav:hover,
-.site-nav .nav:focus{
+.site-nav .nav:focus {
   color: var(--accent-color);
 }
-.header-link-mail{
-  color: var(--primery-text-color);
+.site-nav .nav.current {
+  color: var(--accent-color);
+}
+
+.header-link-mail {
+  font-weight: 500;
+  color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-link-mail:hover,
-.header-link-mail:focus{
+.header-link-mail:focus {
   color: var(--accent-color);
 }
-.header-link-tel{
-  color: var(--primery-text-color);
+.header-link-tel {
+  font-weight: 500;
+  color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-link-tel:hover,
-.header-link-tel:focus{
+.header-link-tel:focus {
   color: var(--accent-color);
 }
 /* -----------------------------FOOTER---------------------------------- */
+.footer {
+  background-color: #2f303a;
+}
+.logo-white {
+  color: var(--main-color);
+}
 .footer-logo {
   color: var(--primery-text-color);
   font-family: raleway;
   font-style: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
-.adress-map{
-    background-color: #000000;
-    color: #ffffff;
-    font-style: 400;
-    font-size: 14px;
-    line-height: 1.71;
+.footer-adress {
+  font-style: normal;
+}
+.adress-map {
+  color: var(--main-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .adress-mail {
-    color: rgba(255, 255, 255, 0.6)
-    font-style: 400;
-    font-size: 14px;
-    line-height: 1.71;
+  font-style: normal;
+  color: var(--footer-adress);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.adress.mob{
-    color: rgba(255, 255, 255, 0.6)
-    font-style: 400;
-    font-size: 14px;
-    line-height: 1.71;  
+.adress-mob {
+  font-style: normal;
+  color: var(--footer-adress);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /*------------------------------- index.html------------------------------ */
 .hero {
@@ -114,8 +138,9 @@ body {
 .hero-title {
   color: #ffffff;
   font-size: 44px;
-  line-height: 1.36px;
+  line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.06em;
 }
 .btn-hero {
   cursor: pointer;
@@ -124,30 +149,40 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+.section-team {
+  background-color: #f5f4fa;
+}
 .about-title {
-  font-style: 700;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .about-text {
   color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .section-title {
   font-style: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 .section-name {
   font-style: 500;
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 .section-descrp {
   color: var(--second-text-color);
-  font-style: 400;
+  font-style: normal;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 /*--------------------------- portfolio.html---------------------------- */
 .button-link {
@@ -156,8 +191,10 @@ body {
   background-color: #f5f4fa;
   font-size: 16px;
   line-height: 1.6;
+  letter-spacing: 0.03em;
 }
 .button-link:hover {
+  color: #ffffff;
   background-color: var(--accent-color);
 }
 .button-link:focus {
@@ -168,10 +205,12 @@ body {
   font-style: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .projects-text {
   color: var(--second-text-color);
   font-style: 400;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
 }
