@@ -31,6 +31,8 @@ fill footer and hero #2F303A
 }
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .link {
@@ -133,26 +135,33 @@ body {
 }
 /*------------------------------- index.html------------------------------ */
 .hero {
-  background-color: rgb(77, 57, 57);
+  text-align: center;
 }
 .hero-title {
   color: #ffffff;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 30px;
+  background-color: rgb(77, 57, 57);
 }
 .btn-hero {
   cursor: pointer;
   color: #ffffff;
+  font-weight: 700;
   background-color: var(--accent-color);
   font-size: 16px;
   line-height: 1.87;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .section-team {
   background-color: #f5f4fa;
 }
 .about-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -160,6 +169,8 @@ body {
   letter-spacing: 0.03em;
 }
 .about-text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -186,12 +197,16 @@ body {
 }
 /*--------------------------- portfolio.html---------------------------- */
 .button-link {
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
   cursor: pointer;
   font-family: inherit;
   background-color: #f5f4fa;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .button-link:hover {
   color: #ffffff;
